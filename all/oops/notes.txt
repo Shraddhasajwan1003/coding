@@ -1,0 +1,24 @@
+oops : oops is oriented with real life objects , procedural programming doesnt model real owrld problems well 
+1. new data added , we'll have to chnage all the functions 
+2.no clear boundaries and well defintion of code 
+4.if we wnat to make data of whole school then we are supposed to make 1000 variables for 1000 students 
+5.procedural makes all the data accessible globally 
+6.no modularity : funcational programs can be monolithic and difficult to maintain (student must be seen as a separate entity ( it has its own behaviour))
+
+
+//oops divides a program into objects and make them communicate with ecah other 
+1.real world entity has its own behaviour and attributes
+2.fundamental idea is to promote modularity by combining behaviour and data together(each dept has its own studnets , teachers , subjects , year)
+3.promotes modularity by encapsulating data and behaviour ----->increase reusability and maintainability 
+
+student container has attributes and behviour{
+    id, age, id,no of subjects
+}
+    { sleep(), study(),bunk()}
+
+student 1 , student2 
+
+objects and classes 
+1.real world entities have behaviour(method/functions that object can perform ) and are exprrssed class and class have attributes ( these are states , properties of an object )
+2.eg person has name , age , height he/she speaks(),eats()----->this is a template ----->can be used by any entity /object like shraddha---->person is class ( blueprint)
+student class (can also be considered as a datatype , bcz 2 students can have different value )
