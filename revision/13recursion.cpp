@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution {
 public:
-    void printmyname(int i, int n){
+    void printmyname(int i, int n){//function is a parameterised func
         if(i == n){
             return;
         }
