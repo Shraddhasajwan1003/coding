@@ -43,10 +43,25 @@ public:
 
         return -1; // fallback, shouldn't occur in valid input
     }
+    int singleNumber(vector<int>& nums) {
+        int ans = 0;
+        for (int num : nums) {
+            ans ^= num; // XOR each number
+        }
+        return ans;
+    }
 };
 
 int main() {
     Solution obj;
-
+    int n ;cin>>n;
+    vector<int>arr;
+    for(int i =0;i<n;i++){
+        int x;cin>>x;
+        arr.push_back(x);
+    }
+    cout<<"num that appear once by brute "<<obj.brute_to_find_no_that_appear_once_other_twice(arr)<<endl;
+    cout<<"num that appear once by better "<<obj.getSingleElement(arr)<<endl;
+    cout<<"num that appear once by optimal  "<<obj.singleNumber(arr)<<endl;
     return 0;
 }
