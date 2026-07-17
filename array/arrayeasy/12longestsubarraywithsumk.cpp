@@ -9,17 +9,19 @@ public:
         int n =nums.size();
         int len=0;
         for(int i =0;i<n;i++){
+            int sum =0;
             for(int j=i;j<n;j++){
-                int sum=0;
-                for(int u=i;u<=j;u++){
-                    sum+=nums[u];
-                }
+                // int sum=0;    // we can avoid below  extra loop, by adding sum =0 ; above 2nd loop 
+                // for(int u=i;u<=j;u++){
+                //     sum+=nums[u];
+                sum+=nums[j];
                 if(sum==target)len=max(len,j-i+1);
-
+                }
             }
-        }
+        
         return len;
     }
+
     //TC is O(N)
     int optimal_app(vector<int>& nums,int target){
         int left =0;
